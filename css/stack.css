@@ -1,9 +1,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 @import url("stack.responsive.css");
-
 @import url("font-awesome/css/font-awesome.min.css");
-@import url("fontello/css/fontello.css");
 
 
 html, body, div, span,h1, h2, h3, h4, h5, h6, p, a, img, small,strong, b, u, i, center, ol, ul, li,form, label,article, aside, footer, header, menu, nav, output,section {
@@ -29,7 +27,7 @@ p {
 	margin: 0 0 20px 0;
 	line-height: 22px;
 }
-/* Basic Styles  */
+
 html {
 	-webkit-text-size-adjust: none;
 }
@@ -462,7 +460,7 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	color: #2f3239;
 }
 .question-tab .tab a.current:hover {
-	color: #FFF;
+	color: #ff5b81;
 }
 .question-tab .tab-inner-warp {
 	background: transparent;
@@ -535,6 +533,8 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	position: absolute;
 	top: 20px;
 	right: 86px;
+	background-color: #ff9a5b;
+	color: #ffffff;
 }
 .stack-question-type i {
 	margin-right: 5px;
@@ -694,7 +694,8 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 .stack-quest-report {
 	float: right;
 	font-size: 12px;
-	background-color: #2f3239;
+	background-color: #ff5b81;
+	color: #fff;
 	padding: 4px 10px;
 	position: absolute;
 	top: 20px;
@@ -753,7 +754,7 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	float: left;
 }
 .stack-quest-date i,.stack-quest-view i,.stack-quest-comment i,.stack-quest-reply i {
-	color: #2f3239;
+	color: #ff5b81;
 }
 .load-questions {
 	font-size: 16px;
@@ -769,7 +770,7 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	margin-right: 10px;
 }
 .load-questions:hover {
-	background-color: #2f3239;
+	background-color: #ff5b81;
 }
 
 
@@ -1180,7 +1181,8 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	line-height: 23px !important;
 	font-size: 11.5px !important;
 	text-align: center;
-	background-color: #2f3239;
+	background-color: #ff5b81;
+	color: #ffffff;
 }
 .widget .ul_list {
 	margin-bottom: 0;
@@ -1631,7 +1633,8 @@ select {
 	padding-left: 37px;
 }
 .login-password a {
-	background-color: #2f3239;
+	background-color: #ff5b81;
+	color: #ffffff;
 	position: absolute;
 	top: 9px;
 	right: 9px;
@@ -1733,7 +1736,7 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 	overflow: hidden;
 	height: 100%;
 	position: relative;
-	border-bottom: 2px solid #e5e5e5;
+	border-bottom: 2px solid #ff5b81;
 }
 .tab a {
     float: left;
@@ -1747,6 +1750,8 @@ h2 [class^="icons-"], h2 [class*=" icons-"] {
 .tab a.current {
 	cursor: default;
 	border-color: #e5e5e5;
+	background-color: #ff5b81;
+	color: #ffffff;
 }
 .tabs-vertical .tab a {
 	border: 1px solid rgba(0,0,0,0);
