@@ -1357,6 +1357,8 @@ span.date i,span.comment i {
 .stack-form-style input.submit {
 	width: 100%;
 	float: right;
+	background-color: #ff5b81;
+	color: #ffffff;
 }
 .stack-form-style p span {
 	font-size: 12px;
@@ -1609,6 +1611,8 @@ select {
 	margin: 10px 0 0 0;
 	display: block;
 	width: 100%;
+	background-color: #ff5b81;
+	color: #ffffff;
 }
 .login-submit input {
 	width: 100% !important;
@@ -1648,6 +1652,8 @@ select {
 	font-size: 15px;
 	font-weight: bold;
 	margin: 0;
+	background-color: #ff5b81;
+	color: white;
 }
 
 .icons-lock {

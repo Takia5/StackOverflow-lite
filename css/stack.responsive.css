@@ -240,7 +240,7 @@ img {
 .row:after {
   clear: both;
 }
-.col-3, .col-4, .col-9, .col-12 {
+.col-3, .col-4,.col-6, .col-9, .col-12 {
   position: relative;  
   min-height: 1px;  
   padding-left: 15px;  
@@ -248,7 +248,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  .col-3, .col-4, .col-9,.col-12 {
+  .col-3, .col-4,.col-6, .col-9,.col-12 {
     float: left;
   }
 
@@ -256,12 +256,12 @@ img {
     width: 100%;
   }
 
-  .col-md-10 {
-    width: 83.33333333333334%;
+    .col-9 {
+    width: 75%;
   }
 
-  .col-9 {
-    width: 75%;
+  .col-6{
+    width: 50%
   }
 
   .col-4 {
