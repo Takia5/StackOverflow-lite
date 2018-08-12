@@ -6,14 +6,6 @@
 @import url("fontello/css/fontello.css");
 
 
-
-
-
-
-
-
-
-
 html, body, div, span,h1, h2, h3, h4, h5, h6, p, a, img, small,strong, b, u, i, center, ol, ul, li,form, label,article, aside, footer, header, menu, nav, output,section {
 	margin: 0;
 	padding: 0;
@@ -1383,7 +1375,7 @@ span.date i,span.comment i {
 	width: 100%;
 }
 
-.stack-form-style-3 input[type="file"],.stack-form-style-4 input[type="file"] {
+.stack-form-style-3 input[type="file"]{
 	width: auto;
 	display: inline-block;
 }
