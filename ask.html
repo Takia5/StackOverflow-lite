@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/stack.css">
   
 </head>
 <body>
@@ -43,7 +43,7 @@
 		
 	<section class="container main-content" style="margin-top: 20px;">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-9">
 				
 				<div class="stack-content ask-question">
 					<div class="boxedtitle page-title"><h2>Post your Question</h2></div>
@@ -58,11 +58,11 @@
 									<input type="text" id="question-title">
 									
 								</p>
-								<p>
+								<!--<p>
 									<label>Tags</label>
 									<input type="text" class="input" name="question_tags" id="question_tags" data-seperator=",">
 									
-								</p>
+								</p>-->
 								<p>
 									<label class="required">Category<span>*</span></label>
 									<span class="styled-select">
@@ -101,7 +101,7 @@
 					</div>
 				</div><!-- End stack-content -->
 			</div><!-- End main -->
-			<aside class="col-md-3 sidebar">
+			<aside class="col-3 sidebar">
 
 				<div class="widget">
 					<h3 class="stack_widget_title">Recent Questions</h3>
@@ -124,8 +124,41 @@
 			</aside><!-- End sidebar -->
 		</div><!-- End row -->
 	</section><!-- End container -->
-	
 	<footer id="footer">
+		<section class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="widget widget_contact">
+						<h3 class="stack_widget_title">StackOverflow-lite</h3>
+						<p>Join us to ask questions and provide answers</p>
+						
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="widget">
+						<h3 class="stack_widget_title">Where We Are ?</h3>
+						<p>Find us in Kampala, Uganda</p>
+						
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="widget">
+						<h3 class="stack_widget_title">Recent Questions</h3>
+						<ul class="stack-related-post">
+							<li class="stack-related-item">
+								<h3><a href="#">Question one</a></h3>
+								<p>How do I create a website in html & css</p>
+								<div class="clear"></div><span>July 03, 2013</span>
+							</li>
+							
+						</ul>
+					</div>	
+				</div>
+				
+			</div><!-- End row -->
+		</section><!-- End container -->
+	</footer><!-- End footer -->
+	<footer id="footer-bottom">
 		<section class="container">
 			<div class="stack-copyright s-left">Copyright 2018 StackOverflow-lite </div>
 			
