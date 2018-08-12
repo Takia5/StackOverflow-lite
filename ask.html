@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Ask Questions</title>
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+
+<div id="stack-wrap" class="stack_grid">
+	
+	
+	<header id="header">
+		<section class="container clearfix">
+			<div class="logo"><a href="index.html">StackOverflow-lite</a></div>
+			<nav class="navigation">
+				<ul>
+					<li class="active_stack_item"><a href="index.html">Home</a>
+						
+					</li>
+					<li class="stack_post"><a href="ask.html">Post a Question</a></li>
+					
+					<li><a href="profile.html">User</a>
+						<li><a href="login.html">Login</a>
+						
+					</li>
+						
+					</li>
+					
+				</ul>
+			</nav>
+		</section><!-- End container -->
+	</header><!-- End header -->
+	
+		
+	<section class="container main-content" style="margin-top: 20px;">
+		<div class="row">
+			<div class="col-md-9">
+				
+				<div class="stack-content ask-question">
+					<div class="boxedtitle page-title"><h2>Post your Question</h2></div>
+					
+					<p>Fill in the form and post your question</p>
+					
+					<div class="stack-form-style stack-form-style-3" id="stack-quest-submit">
+						<form>
+							<div class="form-inputs clearfix">
+								<p>
+									<label class="required">Question Title<span>*</span></label>
+									<input type="text" id="question-title">
+									
+								</p>
+								<p>
+									<label>Tags</label>
+									<input type="text" class="input" name="question_tags" id="question_tags" data-seperator=",">
+									
+								</p>
+								<p>
+									<label class="required">Category<span>*</span></label>
+									<span class="styled-select">
+										<select>
+											<option value="">Select a Category</option>
+											<option value="1">Category 1</option>
+											<option value="2">Category 2</option>
+										</select>
+									</span>
+									
+								</p>
+								
+								<div class="clearfix"></div>
+																
+								<label>Attachment</label>
+								<div class="fileinputs">
+									<input type="file" class="file">
+									<div class="stack-file">
+										<button type="button" class="button small margin_0">Select file</button>
+										<span><i class="icon-arrow-up"></i>Browse</span>
+									</div>
+								</div>
+								
+							</div>
+							<div id="form-textarea">
+								<p>
+									<label class="required">Details<span>*</span></label>
+									<textarea id="question-details" aria-required="true" cols="58" rows="8"></textarea>
+									<span class="form-description">Describe your question above</span>
+								</p>
+							</div>
+							<p class="form-submit">
+								<input type="submit" id="publish-question" value="Submit Your Question" class="button color small submit">
+							</p>
+						</form>
+					</div>
+				</div><!-- End stack-content -->
+			</div><!-- End main -->
+			<aside class="col-md-3 sidebar">
+
+				<div class="widget">
+					<h3 class="stack_widget_title">Recent Questions</h3>
+					<ul class="stack-related-post">
+						<li class="stack-related-item">
+							<h3><a href="#">Question One</a></h3>
+							<p>What is programming</p>
+							<div class="clear"></div><span>Jan 14, 2014</span>
+						</li>
+						<li class="stack-related-item">
+							<h3><a href="#">Question Two</a></h3>
+							<p>What is programming</p>
+							<div class="clear"></div><span>March 07, 2017</span>
+						</li>
+					</ul>
+				</div>
+
+								
+				
+			</aside><!-- End sidebar -->
+		</div><!-- End row -->
+	</section><!-- End container -->
+	
+	<footer id="footer">
+		<section class="container">
+			<div class="stack-copyright s-left">Copyright 2018 StackOverflow-lite </div>
+			
+		</section><!-- End container -->
+	</footer><!-- End footer-bottom -->
+</div><!-- End stack-wrap -->
+
+
+
+
+</body>
+</html>
