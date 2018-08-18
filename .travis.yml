@@ -4,7 +4,7 @@ python:
   - "3.6"
 
 script: 
-  - nosetests -v --with-coverage --cover-package=app
+  - nosetests -v --with-coverage --cover-package=stackoverflow_api
 
 after_success:
   - coveralls
