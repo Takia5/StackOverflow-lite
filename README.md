@@ -10,4 +10,6 @@ This project will be built using HTML, CSS and Javascript for its user interface
 https://github.com/Takia5/StackOverflow-lite/tree/gh-pages
 https://www.pivotaltracker.com/n/projects/2190282
 
+[![Build Status](https://travis-ci.org/Takia5/StackOverflow-lite.svg?branch=feature)](https://travis-ci.org/Takia5/StackOverflow-lite)
+
 [![Coverage Status](https://coveralls.io/repos/github/Takia5/StackOverflow-lite/badge.svg?branch=feature)](https://coveralls.io/github/Takia5/StackOverflow-lite?branch=feature)
