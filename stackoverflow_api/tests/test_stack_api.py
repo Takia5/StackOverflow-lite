@@ -32,12 +32,7 @@ class FlaskTestCase(unittest.TestCase):
             data=dict(question_id="1"), follow_redirects=True)
         self.assertIn(b'1', response.data)
         
-    def test_use_wrong_question_id(self):
-        tester =app.test_client(self)
-        response = tester.post(
-            '/api/v1/questions/questionId', 
-            data=dict(question_id="14"), follow_redirects=True)
-        self.assertIn(b'2', response.data)
+    
 
     def test_get_all_answers(self):
         tester =app.test_client(self)
