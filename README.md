@@ -7,6 +7,7 @@ Users should be able to select the best answer to their questions
 
 This project will be built using HTML, CSS and Javascript for its user interface
 
+https://takia5.github.io/StackOverflow-lite
 https://github.com/Takia5/StackOverflow-lite/tree/gh-pages
 https://www.pivotaltracker.com/n/projects/2190282
 
