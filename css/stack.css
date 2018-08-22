@@ -1,6 +1,5 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-@import url("stack.responsive.css");
 @import url("font-awesome/css/font-awesome.min.css");
 
 
@@ -51,6 +50,31 @@ input[type='submit'] {
     color: #fff;
 	text-shadow: none;
 }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container:before,.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.container:before,.container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
 
 /* Main Fonts  */
 body,input,.button,label,.widget ul li,textarea {
@@ -140,43 +164,6 @@ p a:hover {
 	color: #212121;
 }
 
-/* Typography  */
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-weight: bold;
-	text-transform: none;
-	margin-top: 0;
-	margin-bottom: 18px;
-}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 {
-	font-size: 30px;
-	line-height:30px;
-}
-h2 {
-	font-size: 24px;
-	line-height:28px;
-}
-h3 {
-	font-size: 18px;
-	line-height:24px;
-}
-h4 {
-	font-size: 16px;
-	line-height:22px;
-}
-h5 {
-	font-size: 14px;
-	line-height:20px;
-}
-h6 {
-	font-size: 13px;
-	line-height:18px;
-}
-
-strong { font-weight: bold; }
-small { font-size: 80%; }
-small, strong, b { font-weight: bold; }
 
 /* Links  */
 a,.button,.question-type { 
@@ -212,7 +199,7 @@ body {
 	overflow-x: hidden;
 }
 
-.container > .row > .col-9 {
+.container > .row > .main-section {
 	overflow: hidden;
 	height: 100%;
 }
@@ -262,15 +249,19 @@ body {
 	position: relative;
 	background-color: #5baaff;
 }
-div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
-	background-size: 100% 100%;
-}
+
 #header .logo {
 	float: left;
 	line-height: 86px;
 	-webkit-transition: padding 0.8s;
 	-moz-transition: padding 0.8s;
 	transition: padding 0.8s;
+	font-size: 24px;
+	
+}
+
+#header .logo h1 {
+	color: #fff !important;
 }
 
 /* navigation */
@@ -358,6 +349,21 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 	position: relative;
 	z-index: 991;
 }
+.aside-right {
+  float: right;       
+  width: 25%;       
+}
+
+.main-section {
+  float: left;       
+  width: 72%;         
+}
+
+.col-6 {
+	width: 47%;
+	float: left;
+}
+
 .stack-content,.about-author,.stack-question,#stack-related-post {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -1248,6 +1254,11 @@ span.date i,span.comment i {
 	color: #2B363C;
 }
 /* footer */
+
+#footer {
+  clear: both;        
+  width: 100%;       
+}
 #footer {
 	background-color: #232222;
 	margin-top: 70px;
@@ -1287,6 +1298,7 @@ span.date i,span.comment i {
 	font-size: 12px;
 	line-height: 24px;
 }
+
 
 .stack-copyright {
 	font-size: 13px;
@@ -1669,22 +1681,6 @@ select {
 }
 
 
-
-h1 [class^="icons-"], h1 [class*=" icons-"], 
-h2 [class^="icons-"], h2 [class*=" icons-"], 
-h3 [class^="icons-"], h3 [class*=" icons-"], 
-h4 [class^="icons-"], h4 [class*=" icons-"], 
-h5 [class^="icons-"], h5 [class*=" icons-"], 
-h6 [class^="icons-"], h6 [class*=" icons-"] {
-	margin-top: -2px;
-	margin-right: 12px;
-}
-h1 [class^="icons-"], h1 [class*=" icons-"] {
-	margin-top: -5px;
-}
-h2 [class^="icons-"], h2 [class*=" icons-"] {
-	margin-top: -3px;
-}
 
 /* Lists */
 .ul_list {
