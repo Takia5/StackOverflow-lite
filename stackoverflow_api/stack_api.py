@@ -94,16 +94,17 @@ users = [
 # A route to return index page of this platform.
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>StackOverflow-lite</h1><p>This platform is to help all interested users to ask questions and provide feedback.</p>"
+    return "<h1>StackOverflow-lite</h1>\
+    <p>This platform is to help all interested users to ask questions and provide feedback.</p>"
 
 # A route to return all of the existing users on this platform.
 @app.route('/api/v1/users/all', methods=['GET'])
-def api_all_users():
+def api_get_all_users():
     return jsonify(users)
 
 # A route to return a specific user on this platform.
 @app.route('/api/v1/users/userId', methods=['GET'])
-def api_user_id():
+def api_get_user_id():
     # Check if an ID was provided as part of the URL.
     # If ID is provided, assign it to a variable.
     # If no ID is provided, display an error in the browser.
@@ -126,7 +127,7 @@ def api_user_id():
     return jsonify(user_results)
 
 # A route to register a new user on the platform.
-@app.route('/api/v1/users/user/add', methods=['POST'])
+@app.route('/api/v1/auth/signup', methods=['POST'])
 def api_add_user():
     try:
         parser = reqparse.RequestParser()
@@ -151,36 +152,48 @@ def api_add_user():
         return jsonify(user)
     except:
         return "something went wrong"
+
+# A route to login a user.
+@app.route('/api/v1/auth/login', methods=['GET'])
+def api_user_login():
+   
+    if 'user_email' in request.args:
+        email = str(request.args['user_email'])
+    else:
+        return "Error: No email field provided. Please enter your email."
+
+    user_profiles = []
+
+    
+    for user in users:
+        if user['user_email'] == email:
+            user_profiles.append(user)
+
+      
+    return jsonify(user_profiles)
         
 
 # A route to return all questions on this platform.
 @app.route('/api/v1/questions/all', methods=['GET'])
-def api_all_questions():
+def api_get_all_questions():
     return jsonify(questions)
 
 # A route to return a specific question.
 @app.route('/api/v1/questions/questionId', methods=['GET'])
-def api_question_id():
-    # Check if an ID was provided as part of the URL.
-    # If ID is provided, assign it to a variable.
-    # If no ID is provided, display an error in the browser.
+def api_get_question_id():
+    
     if 'question_id' in request.args:
         id = int(request.args['question_id'])
     else:
         return "Error: No id field provided. Please specify an id."
 
-    # Create an empty list for our results
     question_results = []
 
-    # Loop through the data and match results that fit the requested ID.
-    # IDs are unique, but other fields might return many results
     for question in questions:
         if question['question_id'] == id:
             question_results.append(question)
-
-      # Use the jsonify function to convert our list 
-      # to the JSON format.
-    return jsonify(question_results)
+            
+    return jsonify(question_results) 
 
             
 #A route to post a new question on the platform
@@ -208,13 +221,9 @@ def api_add_question():
             "user_id" :args["user_id"]
         }
         questions.append(question)
-        return jsonify(question)
+        return jsonify("Successfully posted your question!", question)
     except:
         return "something went wrong"
-
-#@app.route('/api/v1/answers/all', methods=['GET'])
-#def api_all_answers():
-    #return jsonify(answers)
 
 #route to add an answer to a specific question
 @app.route('/api/v1/questions/questionId/answers/post', methods=['POST'])
@@ -243,7 +252,7 @@ def api_add_answer():
                     
         }
         answers.append(answer)
-        return jsonify(answer)
+        return jsonify("You have successfully posted your answer!", answer)
     except:
         return "something went wrong"
 
@@ -251,25 +260,18 @@ def api_add_answer():
 #route to get answers to a specific question
 @app.route('/api/v1/answers/questionId', methods=['GET'])
 def api_question_answer_id():
-    # Check if an ID was provided as part of the URL.
-    # If ID is provided, assign it to a variable.
-    # If no ID is provided, display an error in the browser.
+   
     if 'question_id' in request.args:
         id = int(request.args['question_id'])
     else:
         return "Error: No id field provided. Please specify an id."
 
-    # Create an empty list for our results
     results = []
 
-    # Loop through the data and match results that fit the requested ID.
-    # IDs are unique, but other fields might return many results
     for answer in answers:
         if answer['question_id'] == id:
             results.append(answer)
 
-      # Use the jsonify function to convert our list 
-      # to the JSON format.
     return jsonify(results)
 
 if __name__ == '__main__':
