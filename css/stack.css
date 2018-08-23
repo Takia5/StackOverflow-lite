@@ -33,48 +33,6 @@ html {
 * {
 	outline: none;
 }
-input[type='submit'] {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;  
-   cursor: pointer;
-   -moz-border-radius: 2px;
-   -webkit-border-radius: 2px;
-   border-radius: 2px;
-}
-::-moz-selection {
-    color: #fff;
-	text-shadow: none;
-}
-::selection {
-    color: #fff;
-	text-shadow: none;
-}
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container:before,.container:after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
-.container:before,.container:after {
-  content: " ";
-  display: table;
-}
-
-.container:after {
-  clear: both;
-}
-
 
 /* Main Fonts  */
 body,input,.button,label,.widget ul li,textarea {
