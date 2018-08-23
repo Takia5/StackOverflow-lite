@@ -1,1 +1,0 @@
-web: gunicorn StackOverflow-lite:stackoverflow_api
