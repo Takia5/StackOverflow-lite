@@ -18,7 +18,7 @@ class FlaskTestCase(unittest.TestCase):
         response = tester.post(
             '/api/v1/users/userId', 
             data=dict(user_id="1"), follow_redirects=True)
-        self.assertTrue(b'coder456' in response.data)
+        self.assertTrue(b'2', response.data)
 
     def test_get_all_questions(self):
         tester =app.test_client(self)
@@ -33,11 +33,6 @@ class FlaskTestCase(unittest.TestCase):
         self.assertIn(b'1', response.data)
         
     
-
-    def test_get_all_answers(self):
-        tester =app.test_client(self)
-        response = tester.get('/api/v1/answers/all', content_type='application/json')
-        self.assertEqual(response.status_code, 200)
 
 
 if __name__ == '__main__':
