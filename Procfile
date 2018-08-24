@@ -1,1 +1,1 @@
-web: gunicorn run:stackoverflow_api
+web: gunicorn run:app
