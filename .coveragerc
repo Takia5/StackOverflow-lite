@@ -2,6 +2,7 @@
 omit =
     */tests*
     */virtualenv/*
+    */html/*
 
 [report]
 exclude_lines =
